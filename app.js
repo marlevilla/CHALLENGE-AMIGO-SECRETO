@@ -2,6 +2,10 @@
 let nombres = [];
 
 function agregarNombre(nombre) {
+    if (nombre.trim() === "") {
+        alert("Por favor, ingresa un nombre válido");
+        return;
+    }
     nombres.push(nombre);
 }
 
